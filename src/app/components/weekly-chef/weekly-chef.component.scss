@@ -1,0 +1,36 @@
+.chef-section {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    .chef-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .chef-row {
+        display: flex;
+        justify-content: space-evenly;
+
+        .chef-details {
+        }
+
+        .chef-content {
+            font-size: 25px;
+            line-height: 1.2;
+            letter-spacing: 1.08px;
+            text-align: justify;
+            margin-left: 40px;
+        }
+    }
+
+    .cards-row {
+        margin-top: 50px;
+        .restaurants-title {
+            font-size: 30px;
+        }
+        
+        .cards {
+            display: flex;
+        }
+    }
+}

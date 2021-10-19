@@ -1,0 +1,31 @@
+.cards-section {
+    margin-bottom: 140px;
+    position: relative;
+
+    &.meaning {
+        background-color: #fafafa;
+        padding-top: 41px;
+        padding-bottom: 41px;
+    }
+
+    .cards-row-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .cards-row {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+        &.meaning {
+            justify-content: center;
+        }
+    }
+
+    .cards-link {
+        position: absolute;
+        right: 30px;
+    }
+
+}

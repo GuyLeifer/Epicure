@@ -1,0 +1,17 @@
+<div class="homepage">
+    <div class="content">
+        <div>Epicure works with the top<br>chef restaurants in Tel Aviv</div>
+        <div class="search">
+            <input type="search" placeholder="Search for restaurant cuisine, chef"/>
+            <img class="search-icon" src="./../../../assets/search-icon.svg" alt="Search" />
+        </div>
+    </div>
+</div>
+<app-cards 
+    *ngFor="let card of cards"
+    [cards]="card"
+>
+</app-cards>
+<app-weekly-chef></app-weekly-chef>
+<app-about></app-about>
+<app-footer></app-footer>

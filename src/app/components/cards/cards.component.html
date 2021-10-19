@@ -1,0 +1,12 @@
+<div *ngIf="cards" [ngClass]="{'meaning' : cards && cards.meaning}" class="cards-section">
+    <h2 class="cards-row-title">{{ cards.title }}</h2>
+    <div class="cards-row" [ngClass]="{'meaning' : cards && cards.meaning}">
+        <app-card 
+            *ngFor="let card of cards.cards"
+            [card]="card"
+            style="width: 30%"
+        >
+        </app-card>
+    </div>
+    <div *ngIf="cards.link" class="cards-row-title"><span class="cards-link">{{ cards.link }} >></span></div>
+</div>

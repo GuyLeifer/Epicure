@@ -1,0 +1,24 @@
+<div *ngIf="chef" class="chef-section">
+    <h2 class="chef-title">CHEF OF THE WEEK :</h2>
+    
+    <div class="chef-row">
+        <div class="chef-details">
+            <img [src]="chef.image" alt="chef.name" />
+        </div>
+        <div class="chef-content">
+            {{ chef.content }}
+        </div>
+    </div>
+
+    <div class="cards-row">
+        <div class="restaurants-title">{{ chef.name.split(" ")[0]}}'s Restaurants :</div>
+        <div class="cards">
+            <app-card 
+                *ngFor="let card of chef.cards"
+                [card]="card"
+            >
+            </app-card>
+        </div>
+    </div>
+
+</div>

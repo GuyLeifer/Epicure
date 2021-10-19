@@ -1,0 +1,11 @@
+<div [ngClass]="{'price' : card && card.price}" class="card">
+    <h3 *ngIf="card && card.title" class="card-title">{{ card.title }}</h3>
+    <div *ngIf="card" [ngClass]="{'price' : card && card.price}" [ngClass]="{'isIcon' : card && card.isIcon}" class="card-section">
+        <img *ngIf="card.image" class="card-image" [src]="card.image" alt="card.subTitle"/>
+        <h4 class="card-subTitle">{{ card.subTitle }}</h4>
+        <img *ngIf="card.icon" [src]="card.icon" class="card-icon" />
+        <p class="card-content">{{ card.content }}</p>
+        <img *ngIf="card.subIcon" [src]="card.subIcon" class="card-subIcon" />
+        <div *ngIf="card.price" class="card-price"><span>₪{{ card.price }}</span></div>
+    </div>
+</div>
